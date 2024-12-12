@@ -1,0 +1,35 @@
+.header{
+    padding: 14px 20px;
+    background-color: #F05A22;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.header>h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+.iconBox{
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 3rem;
+}
+
+i{
+    color: #F05A22;
+}
+
+@media (max-width: 900px){
+
+    .iconBox{
+        position: absolute;
+        transform: translateX(-20px);
+    }
+}

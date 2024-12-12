@@ -1,0 +1,20 @@
+.searchbar{
+    padding: 12px 20px;
+    background-color: #FFFFFF;
+}
+
+.input{
+    display: flex;
+    gap: 7px;
+    width: 100%;
+    align-items: center;
+    margin: 12px 0px;
+}
+
+.input>input{
+    width: 100%;
+    padding: 7px 10px;
+    border: none;
+    outline: none;
+
+}
