@@ -25,7 +25,13 @@ const Detail = () => {
           <>
             <h1 style={{margin: '10px 20px'}}>Post Number: {id}</h1>
             <div className='fullwidthCard'>
-                <div style={{width:'420px'}}><img src={`https://picsum.photos/200?random=${id}`}/></div>
+                <div style={{width:'420px'}}>
+                  <img src={`https://picsum.photos/200?random=${id}`}/>
+                  <div style={{display:'flex', gap:'20px', position:'relative', top:'-35px', justifyContent:'right', marginRight: '12px'}}>
+                    <i class="fa-solid fa-share-nodes" style={{fontSize:'24px', color:'white'}}></i>
+                    <i class="fa-regular fa-heart" style={{fontSize:'24px', color:'white'}}></i>
+                  </div>
+                </div>
                 <div>
                   <div style={{display:'flex', gap:'20px', marginBottom: "20px"}}>
                     <button style={{padding: '7px 20px', backgroundColor: '#F05A22', color:"white", border:'none', borderRadius: '7px'}}>Detail</button>
@@ -41,7 +47,7 @@ const Detail = () => {
       <div className='post-container'>
         {
           filteredPost && filteredPost.map((post, index) => {
-            return <Post post={post} fullwidth={false} />
+            return <Post post={post} postData={filteredPost} setPostData={setFilteredPost} />
           })
         }
       </div>
